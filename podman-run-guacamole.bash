@@ -10,7 +10,7 @@ GUACAMOLE_CONTAINER="guacamole"
 POSTGRES_USER="${POSTGRES_USER:?POSTGRES_USER is required}"
 POSTGRES_PASSWORD="${POSTGRES_PASSWORD:?POSTGRES_PASSWORD is required}"
 POSTGRES_DATABASE="${POSTGRES_DATABASE:?POSTGRES_DATABASE is required}"
-GUACAMOLE_PORT="${GUACAMOLE_PORT:-8080}"
+GUACAMOLE_PORT="${GUACAMOLE_PORT:-8090}"
 
 podman network exists "$NETWORK" || podman network create "$NETWORK"
 podman volume exists guacamole-postgres || podman volume create guacamole-postgres
