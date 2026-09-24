@@ -56,4 +56,4 @@ podman container exists "$GUACAMOLE_CONTAINER" || podman run -d \
 	-e POSTGRESQL_PASSWORD="$POSTGRES_PASSWORD" \
 	docker.io/guacamole/guacamole:1.6.0
 
-echo "Apache Guacamole is available at: http://localhost:${GUACAMOLE_PORT}/guacamole/"
+echo "Apache Guacamole is available at: http://localhost:${GUACAMOLE_PORT}/guacamole/ with guacadmin:guacadmin"
